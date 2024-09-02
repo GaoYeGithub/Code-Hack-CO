@@ -18,7 +18,7 @@ const MainPage = () => {
         bg="#0c1c34"
         padding="4"
       >
-        <Image src="/logo.png" alt="Discord" boxSize="250px" />
+        <Image src="/discord.png" alt="Discord" boxSize="250px" />
         <MotionText
           fontSize="3xl"
           color="white"
@@ -51,28 +51,36 @@ const MainPage = () => {
         bg="#0c1c34"
         padding="4"
       >
-        <Image src="/discord.png" alt="Server" boxSize="250px" />
-        <MotionText
-          fontSize="3xl"
-          color="white"
-          mt="6"
-          textAlign="right"
-          initial={{ x: '100%', opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: transitionDuration }}
+        <Box
+          backgroundImage="url('/dots.png')"
+          backgroundSize="cover"
+          backgroundPosition="center"
+          padding="20px"
+          borderRadius="md"
         >
-          Email
-        </MotionText>
-        <MotionText
-          fontSize="xl"
-          color="white"
-          textAlign="right"
-          initial={{ x: '100%', opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: transitionDuration, delay: 0.2 }}
-        >
-          gvlassociates@gmail.com
-        </MotionText>
+          <Image src="/logo.png" alt="Server" boxSize="250px" />
+
+          <MotionText
+            fontSize="3xl"
+            color="white"
+            textAlign="center"
+            initial={{ x: '100%', opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: transitionDuration }}
+          >
+            Email
+          </MotionText>
+          <MotionText
+            fontSize="xl"
+            color="white"
+            textAlign="center"
+            initial={{ x: '100%', opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: transitionDuration, delay: 0.2 }}
+          >
+            gvlassociates@gmail.com
+          </MotionText>
+        </Box>
       </Box>
     </Flex>
   );
